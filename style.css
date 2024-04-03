@@ -1,0 +1,55 @@
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3.5rem;
+}
+
+
+.field {
+    display: flex;
+    flex-direction: column;    
+    gap: 0.5rem;   
+    width: 500px;
+}   
+
+.field label {    
+    font-size: 0.9rem;
+   
+}
+
+textarea {
+    border-radius: 5px;
+    border: #ccc 1px solid;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#counter {
+    color:#555;
+    font-size:  1rem;
+}
+
+#toggle {
+    padding: 0.5rem 0.8rem ;
+    border-radius: 5px;
+    border: none;
+    background-color: #4285f4; 
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#toggle:hover {
+    background-color:  #0069d9;
+}
