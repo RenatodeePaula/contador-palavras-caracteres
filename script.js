@@ -9,8 +9,6 @@ switchModeBtn.addEventListener( 'click', () => {
         mode = 'words';
         switchModeBtn.textContent = 'Contar caracteres';        
     } else {
-        let count = 0;
-
         mode = "characters"
         switchModeBtn.textContent = "Contar palavras";        
     };
@@ -19,16 +17,14 @@ switchModeBtn.addEventListener( 'click', () => {
 
 
 textArea.addEventListener('input', () => {    
+    let count = 0;
     if(mode === "characters") {
-        let count = 0;
-
         count = textArea.value.length;
         counter.textContent = `${count} caractere(s)`;
        
    } else {
-    let count = 0
-    const words = textArea.value.trim().split(" ");
-    count = textArea.value.trim() === '' ? 0 : count = words.length;
-    counter.textContent = `${count} palavra(s)`;
+        const words = textArea.value.trim().split(" ");
+        count = textArea.value.trim() === '' ? 0 : words.length;
+        counter.textContent = `${count} palavra(s)`;
    };
 });
